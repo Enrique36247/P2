@@ -1,0 +1,138 @@
+.body{
+    font-family: sans-serif;
+}
+
+
+
+.header-container {
+    width: 100%;
+    background-color: rgb(90, 145, 247);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-width: 2px;
+    border-style: solid;
+    align-items: center;
+}
+
+
+.header-item {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.pictures-item1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.pictures-item1>div {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+}
+
+.pictures-item1 img{
+    width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .header-container {
+        width: 100%;
+        background-color: rgb(90, 145, 247);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-width: 2px;
+        border-style: solid;
+    }
+    
+    
+    .header-item {
+        width: 50%;
+    }
+
+    .pictures-item1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    .pictures-item1>div {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    
+    }
+    
+    .pictures-item1 img{
+        width: 100%;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .pictures-item1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    .pictures-item1>div {
+        width: 45%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    
+    }
+    
+    .pictures-item1 img{
+        width: 100%;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .pictures-item1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    .pictures-item1>div {
+        width: 30%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    
+    }
+    
+    .pictures-item1 img{
+        width: 100%;
+    }
+
+}
