@@ -4,13 +4,13 @@ function listenForValidation() {
 }
 
 function validatePersonalDataForm(e) {
-  e.preventDefault(); 
+  e.preventDefault();
 
   const NAME = e.target.name.value;
   const SURNAME = e.target.surname.value;
   const EMAIL = e.target.email.value;
   const RATE = e.target.rate.value;
-  
+
   let valid = true;
 
   if (!NAME) {
@@ -20,7 +20,7 @@ function validatePersonalDataForm(e) {
     hideErrorMessage("form-name");
   }
 
-  
+
   if (!SURNAME) {
     showErrorMessage("form-surname", "Surname is required.");
     valid = false;
@@ -47,21 +47,21 @@ function validatePersonalDataForm(e) {
 
   if (valid) {
     saveData(NAME, SURNAME, EMAIL, RATE);
-    e.target.submit(); 
+    e.target.submit();
   }
 }
 
 
 function showErrorMessage(elementId, message) {
   const errorElement = document.getElementById(elementId);
-  errorElement.textContent = message;  
-  errorElement.style.visibility = "visible";  
+  errorElement.textContent = message;
+  errorElement.style.visibility = "visible";
 }
 
 
 function hideErrorMessage(elementId) {
   const errorElement = document.getElementById(elementId);
-  errorElement.style.visibility = "hidden";  
+  errorElement.style.visibility = "hidden";
 }
 
 
