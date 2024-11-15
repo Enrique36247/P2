@@ -7,6 +7,7 @@ Para obntener el proyecto solo habra que descargar los archivos que se adjuntan 
 
 
 Pre-requisitos
+
 Tener Visual Studio Code instalado y listo para usar
 
 Ejecutando las pruebas 
