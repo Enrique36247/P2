@@ -1,10 +1,178 @@
 .body {
-    font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
+/* HEADER  */
+
 .header-container {
+  width: 100%;
+  background-color: rgb(90, 145, 247);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-width: 2px;
+  border-style: solid;
+  align-items: center;
+}
+
+
+.header-item {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+/* HEADER-MENU */
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  margin: 20px;
+  width: 45px;
+
+}
+/* PARALLAX */
+.parallax {
+  background-image: url('https://img.freepik.com/vector-premium/montanas-silueta-naturaleza-cielo-nocturno-luna-arboles-ilustran-bosque-vectorial_684242-17.jpg?w=826'); /* Imagen de fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* La imagen cubre todo el área del contenedor */
+  background-attachment: fixed; /* Este es el efecto parallax */
+  height: 100vh; /* Altura de la sección, 100vh es el 100% de la altura de la ventana */
+}
+
+/* Estilo para el contenido dentro de la sección parallax */
+.parallax-content {
+  color: white;
+  text-align: center;
+  padding-top: 200px; /* Ajusta la posición del texto */
+}
+
+/* IMG */
+
+.pictures-item1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.pictures-item1>div {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+
+}
+
+.pictures-item1 img {
+  width: 100%;
+}
+
+
+/* MEDIA QUARIX */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  /* MENU */
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    margin: 20px;
+    width: 45px;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu ul li {
+    padding: 10px;
+  }
+
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu ul li:hover {
+    background-color: #444;
+  }
+
+  .menu {
+    display: none;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+
+  /* IMG */
+  .pictures-item1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+  .pictures-item1>div {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+  }
+
+  .pictures-item1 img {
+    width: 100%;
+  }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .pictures-item1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+  .pictures-item1>div {
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+  }
+
+  .pictures-item1 img {
+    width: 100%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .header-container {
     position: sticky;
     top: 0;
     width: 100%;
@@ -16,126 +184,41 @@
     border-width: 2px;
     border-style: solid;
     align-items: center;
-}
-
-
-.header-item {
+  }
+  
+  
+  .header-item {
     width: 50%;
     display: flex;
     justify-content: space-between;
-    left: 20px;
+    flex-wrap: wrap;
+  }
 
-}
+  .menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-
-.pictures-item1 {
+  .pictures-item1 {
     display: flex;
     flex-wrap: wrap;
-}
+  }
 
 
 
-.pictures-item1>div {
+  .pictures-item1>div {
     width: 30%;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
 
-}
+  }
 
-.pictures-item1 img {
+  .pictures-item1 img {
     width: 100%;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-    .header-container {
-        width: 100%;
-        background-color: rgb(90, 145, 247);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        border-width: 2px;
-        border-style: solid;
-    }
-
-
-    .header-item {
-        width: 50%;
-    }
-
-    .pictures-item1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-
-    .pictures-item1>div {
-        width: 100%;
-        margin: 10px;
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
-
-    }
-
-    .pictures-item1 img {
-        width: 100%;
-    }
-
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-    .pictures-item1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-
-    .pictures-item1>div {
-        width: 45%;
-        margin: 10px;
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
-
-    }
-
-    .pictures-item1 img {
-        width: 100%;
-    }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-    .pictures-item1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-
-    .pictures-item1>div {
-        width: 30%;
-        margin: 10px;
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
-
-    }
-
-    .pictures-item1 img {
-        width: 100%;
-    }
+  }
 
 }
