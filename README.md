@@ -1,4 +1,5 @@
 # Filmarium
+### Autor 
 Enrique Pérez García 
 ### Info sobre el proyecto 
 Filmarium es un proyecto sobre una pagina web dedicada a subir contenido sobre cualquier pelicula exponiendo la sinopsis, personajes, fecha de salida, etc
